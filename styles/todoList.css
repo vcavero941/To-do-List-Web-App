@@ -1,0 +1,108 @@
+.todoList {
+  position: relative;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 62px 374px 1fr;
+  margin-bottom: 10px;
+  align-items: center;
+  background-color: rgb(239, 239, 239);
+  border-radius: 5px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 100%;
+  font-size: 20px;
+  max-width: 520px;
+  max-height: 50px;
+}
+
+.itemName {
+  overflow: hidden;
+  max-height: 30.6px;
+}
+
+.edit-text-box {
+  font-family: 'Poppins', sans-serif;
+  margin-left: -10px;
+  margin-right: 40px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(239, 239, 239);
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 40px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.buttons {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.edit-button {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+}
+
+.delete-button {
+  cursor: pointer;
+  height: 20px;
+  padding: 5px;
+}
+
+.edit-button:active, .delete-button:active, .update-button:active {
+  background-color: rgb(200, 200, 200);
+  border-radius: 20px;
+}
+
+.update-button {
+  height: 18px;
+  padding: 6px;
+  transform: rotate(5deg);
+}
+
+input[type=checkbox] {
+  visibility: hidden;
+  position: absolute;
+}
+
+.checkmark {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 21px;
+  width: 21px;
+  background-color: rgb(90, 90, 90);
+  margin-left: 23px;
+  border-radius: 20px;
+}
+
+.check-box-container:hover input ~ .checkmark {
+  cursor: pointer;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.check-box-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.check-box-container .checkmark:after {
+  left: 7px;
+  bottom: 5px;
+  width: 4px;
+  height: 9px;
+  border:  solid white; 
+  border-width: 0 3px 3px 0;
+  transform: rotate(40deg);
+}
