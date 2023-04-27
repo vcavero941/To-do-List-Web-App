@@ -1,0 +1,50 @@
+.wrapper {
+  margin: 80px auto;
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(209, 209, 209);
+  border-radius: 10px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.23);
+}
+
+.clear-button {
+  border: none;
+  background-color: rgba(237, 88, 88, 0.95);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  transition: opacity 0.15s; 
+}
+
+.clear-button:disabled {
+  opacity: 0;
+  margin-top: 0px;
+  margin-bottom: 2px;
+}
+
+.clear-button:enabled {
+  cursor: pointer;
+}
+
+.clear-button:enabled:hover {
+  opacity: 75%;
+}
+
+@media(max-width: 670px) {
+  .wrapper {
+    max-width: 400px;
+  }
+  .clear-button {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+}
