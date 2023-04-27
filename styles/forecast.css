@@ -1,0 +1,40 @@
+.forecast {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 0px;
+}
+
+.container-icon {
+  width: 70px;
+  height: 70px;
+  filter: brightness(200%);
+  filter: contrast(170%);
+}
+
+.time {
+  font-size: 0.9em;
+}
+
+.container-temp {
+  font-size: .76em;
+}
+
+@media (max-width: 540px) {
+  .container-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .time {
+    font-size: 0.60em;
+  }
+  .container-temp {
+    font-size: .51em;
+  }
+}
